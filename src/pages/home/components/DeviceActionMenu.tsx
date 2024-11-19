@@ -19,7 +19,7 @@ export function DeviceActionMenu({ device }: { device: Device }) {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" size="icon" className="size-8">
+          <Button variant="ghost" size="icon" className="size-8" data-testid="device-action-menu-trigger">
             <Ellipsis />
           </Button>
         </DropdownMenuTrigger>

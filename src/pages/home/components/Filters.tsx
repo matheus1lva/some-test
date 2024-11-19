@@ -85,7 +85,7 @@ export function Filters() {
           </SelectContent>
         </Select>
       </div>
-      <Button size="icon" variant="ghost" onClick={onRefresh}>
+      <Button size="icon" variant="ghost" onClick={onRefresh} data-testid="refresh-button">
         <Refresh className="size-4" />
       </Button>
     </div>

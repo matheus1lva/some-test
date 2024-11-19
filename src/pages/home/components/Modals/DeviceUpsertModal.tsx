@@ -159,15 +159,25 @@ export function DeviceUpsertModal({
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select a device type" />
+                        <SelectValue
+                          placeholder="Select a device type"
+                          data-testid="device-type-selector"
+                        />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="WINDOWS">
+                      <SelectItem
+                        value="WINDOWS"
+                        data-testid="device-type-windows"
+                      >
                         Windows workstation
                       </SelectItem>
-                      <SelectItem value="LINUX">Linux workstation</SelectItem>
-                      <SelectItem value="MAC">Mac workstation</SelectItem>
+                      <SelectItem value="LINUX" data-testid="device-type-linux">
+                        Linux workstation
+                      </SelectItem>
+                      <SelectItem value="MAC" data-testid="device-type-mac">
+                        Mac workstation
+                      </SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
